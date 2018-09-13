@@ -1,8 +1,9 @@
 const express = require('express');
 const os = require('os');
+const bodyParser = require('body-parser');
 
 const app = express();
-
+app.use(bodyParser.json())
 app.use(express.static('dist'));
 
 app.get('/api/getUsername', (req, res) => {
@@ -19,6 +20,7 @@ app.get('/sensor', (req, res) => {
 
 // Mock Move
 app.post('/move', (req, res) => {
+  console.log(req.body);
   return res.json({
     status: "ok"
   });

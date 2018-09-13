@@ -1,11 +1,11 @@
-# simple-react-full-stack
+# golonomic-webapp
 
-[![Build Status](https://travis-ci.org/crsandeep/simple-react-full-stack.svg?branch=master)](https://travis-ci.org/crsandeep/simple-react-full-stack)
-[![Greenkeeper badge](https://badges.greenkeeper.io/crsandeep/simple-react-full-stack.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/jeffizhungry/golonomic-webapp.svg?branch=master)](https://travis-ci.org/jeffizhungry/golonomic-webapp)
+[![Greenkeeper badge](https://badges.greenkeeper.io/jeffizhungry/golonomic-webapp.svg)](https://greenkeeper.io/)
 
 This is a boilerplate to build a full stack web application using React, Node.js, Express and Webpack. It is also configured with webpack-dev-server, eslint, prettier and babel.
 
-- [simple-react-full-stack](#simple-react-full-stack)
+- [golonomic-webapp](#golonomic-webapp)
   - [Introduction](#introduction)
     - [Development mode](#development-mode)
     - [Production mode](#production-mode)
@@ -40,10 +40,10 @@ In the production mode, we will have only 1 server running. All the client side 
 
 ```bash
 # Clone the repository
-git clone https://github.com/crsandeep/simple-react-full-stack
+git clone https://github.com/jeffizhungry/golonomic-webapp
 
 # Go inside the directory
-cd simple-react-full-stack
+cd golonomic-webapp
 
 # Install dependencies
 yarn (or npm install)

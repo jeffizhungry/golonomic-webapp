@@ -1,5 +1,5 @@
 {
-  "name": "simple-react-full-stack",
+  "name": "golonomic-webapp",
   "version": "1.0.0",
   "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
   "main": "src/server/index.js",
@@ -10,7 +10,7 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Sandeep Raveesh",
+  "author": "jeffizhungry",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",

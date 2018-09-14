@@ -10,9 +10,7 @@ const jsonRequest = (method, route, data) => {
       url: host + route,
       data: data,
     })
-    // .then(response => response.json())
     .then(response => {
-      console.log('raw axios data:', response.data);
       observer.next(response.data);
       observer.complete();
     })
@@ -20,10 +18,46 @@ const jsonRequest = (method, route, data) => {
   })
 };
 
-export const getUsername = () => {
-  return jsonRequest('GET', '/api/getUsername', null);
+export const getVersion = () => {
+  return jsonRequest('GET', '/', null);
 }
 
 export const getSensor = () => {
   return jsonRequest('GET', '/sensor', null);
+}
+
+export const getPower = () => {
+  return jsonRequest('GET', '/power', null);
+}
+
+export const vectorMove = (x, y, w) => {
+  return jsonRequest('POST', '/vectormove', {
+    x,
+    y,
+    w
+  });
+}
+
+export const rcMode = (enabled) => {
+  return jsonRequest('POST', '/rc', {
+    enabled
+  });
+}
+
+export const beaconMode = (enabled) => {
+  return jsonRequest('POST', '/beacon', {
+    enabled
+  });
+}
+
+export const drivePattern = (p) => {
+  if (p !== 'square' && p != 'roundedsquare') {
+    // NOTE(Jeff): Not sure if this is the proper way to throw and error
+    return Observable.create(observer => {
+      observer.error('invalid pattern');
+    })
+  }
+  return jsonRequest('POST', '/pattern', {
+    enabled
+  });
 }

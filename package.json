@@ -13,9 +13,11 @@
   "author": "jeffizhungry",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.3",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "rxjs": "^6.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

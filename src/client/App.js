@@ -61,14 +61,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>{this.state.version}</h1>
+        <h4>Version: {this.state.version}</h4>
         <h1>Sensor Readings</h1>
         <div>
           <p>Heading:  {this.state.heading}</p>
           <p>Distance: {this.state.distance}</p>
-        </div>
-        <h1>Drive Pattern</h1>
-        <div>
         </div>
       </div>
     );
